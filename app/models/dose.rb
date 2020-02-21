@@ -6,4 +6,8 @@ class Dose < ApplicationRecord
   validates :cocktail, presence: true
   validates :ingredient, presence: true
   validates :cocktail, uniqueness: { scope: :ingredient }
+
+  def to_label
+    name.capitalize
+  end
 end

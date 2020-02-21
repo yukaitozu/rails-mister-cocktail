@@ -1,6 +1,4 @@
 class DosesController < ApplicationController
-  def show
-  end
 
   def new
     @cocktail = Cocktail.find(params[:cocktail_id])
