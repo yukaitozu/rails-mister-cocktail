@@ -3,6 +3,7 @@
     <div class="list-group">
     <% @cocktail.doses.each do |dose| %>
       <li class="list-group-item">
+        <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
         <p><%= dose.description %></p>
         <p><%= dose.ingredient.name %></p>
         <%= link_to "Delete", dose_path(dose), method: :delete, data: { confirm: "Delete dose" }, class: 'btn btn-light' %>
