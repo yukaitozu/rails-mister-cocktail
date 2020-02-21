@@ -11,7 +11,7 @@
       <% if cocktail.photo.attached? %>
         <% @path = cocktail.photo.key %>
       <% else %>
-        <% @path = "a-cup-filled-of-green-tea-with-lemon-3677150_lftutq" %>
+        <% @path = "https://res.cloudinary.com/drihevibr/image/upload/v1582268331/a-cup-filled-of-green-tea-with-lemon-3677150_lftutq.jpg" %>
       <% end %>
 
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( <%= cl_image_path @path, height: 400, width: 400, crop: :fill %> )">
