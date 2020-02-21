@@ -4,7 +4,7 @@
     <% if @cocktail.photo.attached? %>
       <% @path = @cocktail.photo.key %>
     <% else %>
-      <% @path = "https://res.cloudinary.com/drihevibr/image/upload/v1582268331/a-cup-filled-of-green-tea-with-lemon-3677150_lftutq.jpg" %>
+      <% @path = "a-cup-filled-of-green-tea-with-lemon-3677150_lftutq" %>
     <% end %>
 
     <%= cl_image_tag @path, height: 400, width: 400, crop: :fill %>
