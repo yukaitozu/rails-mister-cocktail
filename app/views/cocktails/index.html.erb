@@ -7,7 +7,6 @@
 <div class="container">
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
-
       <% if cocktail.photo.attached? %>
         <% @path = cocktail.photo.key %>
       <% else %>
