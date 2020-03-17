@@ -11,12 +11,12 @@
 
     <div class="card-product-infos">
       <h1><%= @cocktail.name %></h1>
-      <div class="d-flex justify-content-between" id="list-group">
+      <div class="d-flex justify-content-between">
         <% @cocktail.doses.each do |dose| %>
-          <li class="list-group-item text-left">
+          <div class="list-item text-left">
             <p><%= dose.description %> | <%= dose.ingredient.name %></p>
             <%= link_to "Delete", dose_path(dose), method: :delete, data: { confirm: "Delete dose" }, class: 'btn btn-sm btn-light' %>
-          </li>
+          </div>
         <% end %>
       </div>
     </div>
