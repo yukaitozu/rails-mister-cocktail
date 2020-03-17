@@ -12,6 +12,9 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
 }
 
 .cards {
@@ -98,5 +101,19 @@
 }
 
 .card-product-actions {
-  margin-top: 16px;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.list-group-item {
+  margin-right: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.list-group-item a {
+  margin-bottom: 2px;
+}
+
+#list-item {
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }

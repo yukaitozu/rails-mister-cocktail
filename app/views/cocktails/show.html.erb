@@ -11,9 +11,9 @@
 
     <div class="card-product-infos">
       <h1><%= @cocktail.name %></h1>
-      <div class="list-group">
+      <div class="d-flex justify-content-between" id="list-group">
         <% @cocktail.doses.each do |dose| %>
-          <li class="list-group-item">
+          <li class="list-group-item text-left">
             <p><%= dose.description %> | <%= dose.ingredient.name %></p>
             <%= link_to "Delete", dose_path(dose), method: :delete, data: { confirm: "Delete dose" }, class: 'btn btn-sm btn-light' %>
           </li>
@@ -23,7 +23,7 @@
   </div>
   <div class="card-product-actions">
     <%= link_to "Back", cocktails_path, class: 'btn btn-primary' %>
-    <%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
-    <%= link_to "Delete cocktail", cocktail_path(@cocktail), method: :delete, data: { confirm: "Delete cocktail" }, class: 'btn btn-primary' %>
+    <%= link_to "Add a New Dose", new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
+    <%= link_to "Delete Cocktail", cocktail_path(@cocktail), method: :delete, data: { confirm: "Delete cocktail" }, class: 'btn btn-primary' %>
   </div>
 </div>
