@@ -21,7 +21,9 @@
       </div>
     </div>
   </div>
-  <%= link_to "Back", cocktails_path, class: 'btn btn-primary' %>
-  <%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
-  <%= link_to "Delete cocktail", cocktail_path(@cocktail), method: :delete, data: { confirm: "Delete cocktail" }, class: 'btn btn-primary' %>
+  <div class="card-product-actions">
+    <%= link_to "Back", cocktails_path, class: 'btn btn-primary' %>
+    <%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
+    <%= link_to "Delete cocktail", cocktail_path(@cocktail), method: :delete, data: { confirm: "Delete cocktail" }, class: 'btn btn-primary' %>
+  </div>
 </div>
